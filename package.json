@@ -1,0 +1,26 @@
+{
+  "name": "react-router-sample",
+  "version": "1.0.0",
+  "description": "Sample application to understand the react-router better",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Marcoga/react-router-sample.git"
+  },
+  "keywords": [
+    "react-router"
+  ],
+  "author": "Marcoga",
+  "license": "The Unlicense",
+  "bugs": {
+    "url": "https://github.com/Marcoga/react-router-sample/issues"
+  },
+  "homepage": "https://github.com/Marcoga/react-router-sample",
+  "dependencies": {
+    "react": "^0.13.3",
+    "react-router": "^0.13.3"
+  }
+}
