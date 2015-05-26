@@ -1,2 +1,2 @@
-var react = require('react');
-
+var app = require('./app.jsx');
+app.start();
