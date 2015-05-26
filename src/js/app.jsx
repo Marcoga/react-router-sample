@@ -17,8 +17,17 @@ var Inbox = React.createClass({
 		return (
 			<div>
 				<h2>Inbox</h2>
+				<RouteHandler />
 			</div>
 		);
+	}
+});
+
+var Message = React.createClass({
+	render() {
+		return(
+			<h3>This is Message: { this.props.params.id }</h3>
+			);
 	}
 });
 
@@ -31,6 +40,7 @@ var App = React.createClass({
 				<ul className='list-group'>
 					<li className='list-group-item'><a href='#/about'>about</a></li>
 					<li className='list-group-item'><a href='#/inbox'>inbox</a></li>
+					<li className='list-group-item'><a href='#/inbox/message/2'>message 2</a></li>
 				</ul>
 				<RouteHandler />
 			</div>
@@ -41,7 +51,9 @@ var App = React.createClass({
 var routes = (
 	<Route handler={ App }>
 		<Route path="about" handler={ About } />
-		<Route path="inbox" handler={ Inbox } />
+		<Route path="inbox" handler={ Inbox }>
+			<Route path="message/:id" handler={ Message } />
+		</Route>
 	</Route>
 	);
 
