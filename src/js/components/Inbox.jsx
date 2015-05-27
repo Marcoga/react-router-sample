@@ -1,13 +1,14 @@
 var React = require('react'),
-	{ RouteHandler } = require('react-router');;
+	{ RouteHandler } = require('react-router'),
+	Well = require('./bootstrap/Well.jsx');
 
 var Inbox = React.createClass({
 	render() {
 		return (
-			<div>
+			<Well>
 				<h2>Inbox</h2>
 				<RouteHandler />
-			</div>
+			</Well>
 		);
 	}
 });

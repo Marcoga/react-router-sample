@@ -1,11 +1,12 @@
-var React = require('react');
+var React = require('react'),
+	Well = require('./bootstrap/Well.jsx');
 
 var About = React.createClass({
 	render() {
 		return (
-			<div>
+			<Well>
 				<h2>About</h2>
-			</div>
+			</Well>
 		);
 	}
 });
