@@ -17,30 +17,34 @@ var Login = React.createClass({
     event.preventDefault();
     var { router } = this.context;
     var nextPath = router.getCurrentQuery().nextPath;
-    var email = this.refs.email.getDOMNode().value;
+    var username = this.refs.username.getDOMNode().value;
     var pass = this.refs.pass.getDOMNode().value;
 
-    auth.login(email, pass, function (loggedIn) {
+    auth.login(username, pass, function (loggedIn) {
       if (!loggedIn)
         return this.setState({ error: true });
 
       if (nextPath) {
         router.replaceWith(nextPath);
       } else {
-        router.replaceWith('/about');
+        router.replaceWith('/');
       }
     }.bind(this));
   },
 
   render: function () {
     var errors = this.state.error ? <p>Bad login information</p> : '';
+    
     return (
-      <form onSubmit={this.handleSubmit}>
-        <label><input ref="email" placeholder="email" defaultValue="joe@example.com"/></label>
-        <label><input ref="pass" placeholder="password"/></label> (hint: password1)<br/>
-        <button type="submit">login</button>
-        {errors}
-      </form>
+		<div className="login-card">
+    		<h1>Log-in</h1><br/>
+    		<form onSubmit={this.handleSubmit}>
+    			<input ref="username" type="text" placeholder="username" defaultValue="marco" />
+    			<input ref="pass" type="password" placeholder="password"/>
+    			<input type="submit" name="login" className="login login-submit" value="login" />
+    			{errors}
+			</form>
+		</div>
     );
   }
 });

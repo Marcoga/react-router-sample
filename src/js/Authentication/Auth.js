@@ -1,7 +1,7 @@
 
-function pretendRequest(email, pass, cb) {
+function pretendRequest(username, pass, cb) {
   setTimeout(function () {
-    if (email === 'joe@example.com' && pass === 'password1') {
+    if (username === 'marco' && pass === '1234') {
       cb({
         authenticated: true,
         token: Math.random().toString(36).substring(7)
@@ -13,7 +13,7 @@ function pretendRequest(email, pass, cb) {
 }
 
 var auth = {
-  login: function (email, pass, cb) {
+  login: function (username, pass, cb) {
     cb = arguments[arguments.length - 1];
 
     if (localStorage.token) {
@@ -26,7 +26,7 @@ var auth = {
       return;
     }
 
-    pretendRequest(email, pass, function (res) {
+    pretendRequest(username, pass, function (res) {
       if (res.authenticated) {
         localStorage.token = res.token;
         if (cb) cb(true);
