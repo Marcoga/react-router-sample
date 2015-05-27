@@ -1,5 +1,5 @@
 # react-router-sample
-In order to deep a little deeper into react, I will need some form of client-side-routing. I am interested in using react in combination with Flux. I want to evaluate the use of the routers available before settling on a router. 
+In order to dive a little deeper into react, and start using it in production. I will need some form of client-side-routing. I am interested in using react with the Flux Architecture, which is why I want to evaluate some of the routers available before setteling on a router. I would like to choose the router that is the most compatible with Flux
 
 ## Goals
 1. Understand how to use the react-router
