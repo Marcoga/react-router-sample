@@ -11,5 +11,8 @@
 * What does it do better?
 * What is not possible?
 
+## Chanlenges in Flux
+* What could be the problems in Flux?
+
 ## What do I dislike?
 * Does anything feel like a Hack?
