@@ -24,3 +24,6 @@ $ npm install --global gulp
 npm install
 gulp build-all
 ```
+
+# Lessons Learned
+[What I Learned] (/LEASSONS_LEARNED.md)
