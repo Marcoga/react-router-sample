@@ -1,7 +1,7 @@
 # react-router-sample
 Sample application to understand the react-router better
 ## Pre-requisites
-* Node
+* [Node] (http://nodejs.org) 
 * gulp
 
 ## Build
