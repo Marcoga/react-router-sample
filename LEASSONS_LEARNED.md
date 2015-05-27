@@ -8,4 +8,4 @@
 	* What do the files above do? What are their responsabilities?
 	
 ## What do I dislike?
-	* Does anything feel like a Hack?
+* Does anything feel like a Hack?
