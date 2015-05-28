@@ -24,6 +24,8 @@ $ npm install --global gulp
 npm install
 gulp build-all
 ```
+# Next Steps
+* Explore what `<Link />` is and where it should be used.
 
 # Lessons Learned
 [What I Learned] (/LEASSONS_LEARNED.md)
